@@ -14,7 +14,9 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body, input, textarea, button {
-        
+        font-family: 'Inter', serif;
+        font-style: normal;
+        font-weight: 400;
     }
 
 `
