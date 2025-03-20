@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Logo from '../../assets/logo.svg'
-import { Navbar } from './style'
+import { DesktopMenu, HamburgerButton, MobileMenu, Navbar } from './style'
 
 export function Header(){
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -12,7 +12,12 @@ export function Header(){
     return(
         <>
            <img src={Logo} alt="" /> 
-           <Navbar isMobileMenuOpen={isMobileMenuOpen}>
+           <Navbar>
+            <HamburgerButton onClick={toggleMobileMenu} 
+            aria-expanded={isMobileMenuOpen}
+            aria-label="Abrir menu"
+            > {isMobileMenuOpen ? 'X' : '☰'}</HamburgerButton>
+            <MobileMenu isOpen={isMobileMenuOpen}>
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">New</a></li>
@@ -20,7 +25,17 @@ export function Header(){
                     <li><a href="">Trending</a></li>
                     <li><a href="">Categories</a></li>
                 </ul>
-                <button onClick={toggleMobileMenu}></button>
+                </MobileMenu>
+
+                <DesktopMenu>
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/new">New</a></li>
+                            <li><a href="/popular">Popular</a></li>
+                            <li><a href="/trending">Trending</a></li>
+                            <li><a href="/categories">Categories</a></li>
+                        </ul>
+                </DesktopMenu>
            </Navbar>
         </>
     )
