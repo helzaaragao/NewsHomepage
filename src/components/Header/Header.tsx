@@ -13,11 +13,11 @@ export function Header(){
     return(
         <HeaderContainer>
            <img src={Logo} alt="" /> 
-           <Navbar>
+           <Navbar $isOpen={isMobileMenuOpen}>
                 <HamburgerButton onClick={toggleMobileMenu} 
                 aria-expanded={isMobileMenuOpen}
                 aria-label="Abrir menu"
-                > {isMobileMenuOpen ? <X size={32} weight="light" /> : <List size={40} weight="bold" />}</HamburgerButton>
+                > {isMobileMenuOpen ? <X size={32} weight="regular" /> : <List size={40} weight="bold" />}</HamburgerButton>
                 <MobileMenu $isOpen={isMobileMenuOpen}>
                     <ul>
                         <li><a href="">Home</a></li>
