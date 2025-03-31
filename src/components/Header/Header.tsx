@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Logo from '../../assets/logo.svg'
 import { DesktopMenu, HamburgerButton, HeaderContainer, MobileMenu, Navbar } from './style'
 import {List, X}  from "@phosphor-icons/react"
@@ -9,6 +9,21 @@ export function Header(){
     function toggleMobileMenu(){
         setMobileMenuOpen(!isMobileMenuOpen)
     }
+
+    useEffect(() => {
+        if (isMobileMenuOpen) {
+          document.body.style.overflow = 'hidden';
+          document.documentElement.style.overflow = 'hidden'; // Para alguns navegadores
+        } else {
+          document.body.style.overflow = '';
+          document.documentElement.style.overflow = '';
+        }
+      
+        return () => {
+          document.body.style.overflow = '';
+          document.documentElement.style.overflow = '';
+        };
+      }, [isMobileMenuOpen]);
 
     return(
         <HeaderContainer>

@@ -24,10 +24,6 @@ export const Navbar = styled.nav<MobileMenuProps>`
     right: 0;
     z-index: 100;
     transition: transform 0.3s ease-in-out;
-
-   
-
-
 `
 
 export const HamburgerButton = styled.button`
@@ -51,6 +47,7 @@ export const HamburgerButton = styled.button`
 export const MobileMenu = styled.div<MobileMenuProps>`
        display: ${props => props.$isOpen ? 'block' : 'none'};
        position: fixed;
+       overflow: hidden;
  
        ${({ $isOpen }) => $isOpen
     ? css`
@@ -59,8 +56,8 @@ export const MobileMenu = styled.div<MobileMenuProps>`
         transform: translateX(0);
         background-color: hsl(36, 100%, 99%);
         top: 0;
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
         ul {
           display: flex;
@@ -69,11 +66,13 @@ export const MobileMenu = styled.div<MobileMenuProps>`
           padding-left: 1rem;
           gap: 1rem;
           list-style: none;
+          overflow: visible;
+
           a {
             text-decoration: none;
             color: hsl(240, 100%, 5%);
            }
-        }
+           overflow-y: hidden; 
       `
     : css`
         opacity: 0;
@@ -93,20 +92,5 @@ export const DesktopMenu = styled.div`
     display: none;
      @media(min-width: 768px) {
      display: block;
-   }
-`
-export const NewsArticles = styled.section`
-   margin-top: 2rem;
-   background-color: ${(props) => props.theme['dark-blue']};
-   padding: 1rem;
-   h2{
-     color: ${(props) => props.theme['soft-orange']};
-     margin-bottom: 1rem;
-   }
-
-   h3{
-    color: ${(props) => props.theme['off-white']};
-    margin-top: 0.8rem;
-    margin-bottom: 0.8rem;
    }
 `
