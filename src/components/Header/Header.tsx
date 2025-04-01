@@ -13,7 +13,7 @@ export function Header(){
     useEffect(() => {
         if (isMobileMenuOpen) {
           document.body.style.overflow = 'hidden';
-          document.documentElement.style.overflow = 'hidden'; // Para alguns navegadores
+          document.documentElement.style.overflow = 'hidden';
         } else {
           document.body.style.overflow = '';
           document.documentElement.style.overflow = '';
@@ -27,12 +27,14 @@ export function Header(){
 
     return(
         <HeaderContainer>
-           <img src={Logo} alt="" /> 
+           <img src={Logo} alt="Logo da News Homepage: um W maiúsculo preto com um ponto final" /> 
            <Navbar $isOpen={isMobileMenuOpen}>
                 <HamburgerButton onClick={toggleMobileMenu} 
                 aria-expanded={isMobileMenuOpen}
-                aria-label="Abrir menu"
-                > {isMobileMenuOpen ? <X size={32} weight="regular" /> : <List size={40} weight="bold" />}</HamburgerButton>
+                aria-label="Abrir menu"> 
+                  {isMobileMenuOpen ? <X size={32} weight="regular" /> 
+                  : <List size={40} weight="bold" />}
+                </HamburgerButton>
                 <MobileMenu $isOpen={isMobileMenuOpen}>
                     <ul>
                         <li><a href="">Home</a></li>

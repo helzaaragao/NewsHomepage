@@ -10,7 +10,7 @@ export function Home(){
         <HomeContainer>
             <Header></Header>
             <FutureWeb>
-                <img src={futureWebMobile} alt="" />
+                <img src={futureWebMobile} alt="Ilustração abstrata de formas geométricas coloridas interligadas." />
                 <h1>The Bright Future of Web 3.0?</h1>
                 <p>We dive into the next evolution of the web that claims to put power of the platforms back into the hands of people. But is it really fulfilling its promise?</p>
                 <button>READ MORE</button>

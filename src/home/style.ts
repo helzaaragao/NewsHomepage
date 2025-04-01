@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const HomeContainer = styled.main`
-    margin: 1.5rem;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
+    margin: 1rem;
 `
 export const FutureWeb = styled.section`
    display: flex;
@@ -42,21 +42,23 @@ export const NewsArticles = styled.section`
 
    h3{
     color: ${(props) => props.theme['off-white']};
-    margin-top: 0.8rem;
-    margin-bottom: 0.8rem;
+    margin-top: 2rem;
+    margin-bottom: 0.6rem;
    }
    p{
     font-size: 14px;
     margin-bottom: 1rem;
+    color: ${(props) => props.theme['grayish-blue']};
    }
    hr{
+    margin-top: 2rem;
     opacity: 35%;
-    /* colocar algo para a linha ficar menos grossa */
    }
 `
 
 export const Topics = styled.section`
   margin-top: 2rem;
+  margin-bottom: 2rem; 
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
