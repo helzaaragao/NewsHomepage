@@ -1,17 +1,36 @@
 import styled from "styled-components";
 
 export const HomeContainer = styled.main`
-    /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
     margin: 1rem;
+    @media(min-width: 768px){
+      margin: 2.5rem 10rem;
+      
+    }
 `
-export const FutureWeb = styled.section`
+
+export const SubjectNews = styled.div`
+  display: block;
+  @media(min-width: 768px){
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1.8rem;
+    }
+`
+export const PrincipalSubject = styled.section`
    display: flex;
    flex-direction: column;
    gap: 1.2rem;
     img{ 
         width: 100%;
+    }
+    #futureWeb-mobile{
+      display: block;
+    }
+    #futureWeb-desktop{
+      display: none;
     }
    h1 {
         color: ${(props) => props.theme['dark-blue']};
@@ -28,8 +47,18 @@ export const FutureWeb = styled.section`
      color: ${(props) => props.theme['dark-blue']};
      font-weight: bolder;
      font-size: 0.938rem;
-   
    }
+   @media(min-width: 768px){
+      #futureWeb-desktop{
+        display: block;
+        width: 100%;
+      }
+      #futureWeb-mobile{
+        display: none;
+      }
+
+      
+    }
 `
 export const NewsArticles = styled.section`
    margin-top: 2rem;
@@ -54,6 +83,10 @@ export const NewsArticles = styled.section`
     margin-top: 2rem;
     opacity: 35%;
    }
+   @media(min-width: 768px){
+    margin-top: 0;
+   }
+
 `
 
 export const Topics = styled.section`
@@ -99,5 +132,12 @@ export const Topics = styled.section`
         font-size: 0.9rem;
       }
     }
+
+   }
+
+   
+   @media(min-width: 768px){
+      display: flex;
+      flex-direction: row;
    }
 `

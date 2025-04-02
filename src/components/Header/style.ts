@@ -8,7 +8,6 @@ export const HeaderContainer = styled.header`
    display: flex;
    justify-content: space-between;
    align-items: center;
-   /* position: relative; */
     img {
         width: 65px;
         height: 40px;
@@ -20,18 +19,17 @@ export const Navbar = styled.nav<MobileMenuProps>`
     display: flex;
     flex-direction: column;
     width: 60%;
-    /* z-index: 100; */
     transition: transform 0.3s ease-in-out;
+    @media(min-width: 768px){
+      width: auto;
+    }
 `
 
 export const HamburgerButton = styled.button`
-    /* display: block; */
     font-size: 2.188rem;
     border: none;
     margin-left: auto; 
     padding: 1rem;
-    /* top: 1rem;       
-    right: 1rem;     */
     z-index: 101;   
     cursor: pointer;
     background-color: ${(props) => props.theme['off-white']};
@@ -43,7 +41,6 @@ export const HamburgerButton = styled.button`
 export const MobileMenu = styled.div<MobileMenuProps>`
        display: ${props => props.$isOpen ? 'block' : 'none'};
        position: fixed;
-       /* overflow: hidden; */
        background-color: ${(props) => props.theme['off-white']};
  
        ${({ $isOpen }) => $isOpen
@@ -62,13 +59,11 @@ export const MobileMenu = styled.div<MobileMenuProps>`
           padding-left: 1rem;
           gap: 1rem;
           list-style: none;
-          /* overflow: visible; */
 
           a {
             text-decoration: none;
             color: hsl(240, 100%, 5%);
            }
-           /* overflow-y: hidden;  */
       `
     : css`
         opacity: 0;
@@ -84,8 +79,26 @@ export const MobileMenu = styled.div<MobileMenuProps>`
 
 export const DesktopMenu = styled.div`
     display: none;
+   
+
+
     
      @media(min-width: 768px) {
      display: block;
+     ul{
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+      font-size: 0.938rem;
+      :hover{
+          color: ${(props)=> props.theme['soft-red']};
+      }
+
+      a{
+        text-decoration: none;
+        color: ${(props)=> props.theme['dark-grayish-blue']}; 
+        font-size: 0.938rem;
+      }
+    }
    }
 `
