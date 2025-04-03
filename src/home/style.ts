@@ -12,9 +12,12 @@ export const HomeContainer = styled.main`
 
 export const SubjectNews = styled.div`
   display: block;
+ 
   @media(min-width: 768px){
       display: flex;
       justify-content: center;
+      width: 100%;
+      height:  30rem;
       gap: 2rem;
       margin-top: 1.8rem;
     }
@@ -25,6 +28,7 @@ export const PrincipalSubject = styled.section`
    gap: 1.2rem;
     img{ 
         width: 100%;
+        height: 100%;
     }
     #futureWeb-mobile{
       display: block;
@@ -56,7 +60,32 @@ export const PrincipalSubject = styled.section`
       #futureWeb-mobile{
         display: none;
       }
+      width: 50rem;
 
+      article{ 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        margin-bottom: 1rem;
+       
+         div{ 
+            width: 40%;
+            h1{
+              font-weight: 800;
+              font-size: 3rem;
+            }
+         }
+         aside{ 
+          width: 50%;
+          padding-right: 1rem;
+          p{
+            font-size: 0.938rem;
+            margin-bottom: 1.5rem;
+            line-height: 160%;
+          }
+         }
+      }
       
     }
 `
@@ -85,6 +114,8 @@ export const NewsArticles = styled.section`
    }
    @media(min-width: 768px){
     margin-top: 0;
+    width: 20rem;
+ 
    }
 
 `

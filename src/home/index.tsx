@@ -14,12 +14,17 @@ export function Home(){
                 <PrincipalSubject>
                     <img src={futureWebMobile} alt="Ilustração abstrata de formas geométricas coloridas interligadas." id="futureWeb-mobile"/>
                     <img src={futureWebDesktop} alt="Ilustração abstrata de formas geométricas coloridas interligadas." id="futureWeb-desktop"/>
-
-                    <h1>The Bright Future of Web 3.0?</h1>
-                    {/* <aside> */}
-                        <p>We dive into the next evolution of the web that claims to put power of the platforms back into the hands of people. But is it really fulfilling its promise?</p>
-                        <button>READ MORE</button>
-                    {/* </aside> */}
+                    
+                    <article>
+                        <div>
+                            <h1>The Bright Future of Web 3.0?</h1>
+                        </div>
+                        
+                        <aside>
+                            <p>We dive into the next evolution of the web that claims to put power of the platforms back into the hands of people. But is it really fulfilling its promise?</p>
+                            <button>READ MORE</button>
+                        </aside>
+                    </article>
                 </PrincipalSubject>
                 <NewsArticles>
                     <h2>New</h2>
