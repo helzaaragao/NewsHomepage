@@ -20,6 +20,13 @@ export const SubjectNews = styled.div`
       height:  30rem;
       gap: 2rem;
       margin-top: 1.8rem;
+      margin-bottom: 2rem;
+    }
+
+    @media(min-width: 1445px){
+      display: flex;
+      height:  38rem;
+    
     }
 `
 export const PrincipalSubject = styled.section`
@@ -42,6 +49,8 @@ export const PrincipalSubject = styled.section`
    } 
    p{
     color: ${(props) => props.theme['dark-grayish-blue']};
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
    }
    button {
      width: 10rem;
@@ -51,11 +60,18 @@ export const PrincipalSubject = styled.section`
      color: ${(props) => props.theme['dark-blue']};
      font-weight: bolder;
      font-size: 0.938rem;
+     cursor: pointer;
+
+     &:hover{
+      color: ${(props) => props.theme['off-white']};
+      background-color: ${(props) => props.theme['dark-blue']};
+     }
    }
    @media(min-width: 768px){
       #futureWeb-desktop{
         display: block;
         width: 100%;
+        height: 100%;
       }
       #futureWeb-mobile{
         display: none;
@@ -65,9 +81,9 @@ export const PrincipalSubject = styled.section`
       article{ 
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        height: 100%;
-        margin-bottom: 1rem;
+        margin-top: 1rem;
+        
+        
        
          div{ 
             width: 40%;
@@ -83,11 +99,20 @@ export const PrincipalSubject = styled.section`
             font-size: 0.938rem;
             margin-bottom: 1.5rem;
             line-height: 160%;
+            margin-top: 0;
+          
           }
          }
       }
+
       
     }
+    
+    @media(min-width: 1445px){
+    
+    width: 80rem;
+  
+  }
 `
 export const NewsArticles = styled.section`
    margin-top: 2rem;
@@ -96,12 +121,19 @@ export const NewsArticles = styled.section`
    h2{
      color: ${(props) => props.theme['soft-orange']};
      margin-bottom: 1rem;
+     font-weight: 800;
+     font-size: 2rem;
    }
 
    h3{
     color: ${(props) => props.theme['off-white']};
     margin-top: 2rem;
     margin-bottom: 0.6rem;
+    cursor: pointer;
+    &:hover{
+      color: ${(props) => props.theme['soft-orange']};
+      
+    }
    }
    p{
     font-size: 14px;
@@ -114,9 +146,14 @@ export const NewsArticles = styled.section`
    }
    @media(min-width: 768px){
     margin-top: 0;
-    width: 20rem;
- 
+    width: 25rem;
+   
    }
+   @media(min-width: 1445px){
+    
+    width: 30rem;
+  
+  }
 
 `
 
@@ -172,3 +209,6 @@ export const Topics = styled.section`
       flex-direction: row;
    }
 `
+
+// Arrumar linhas do p Bright Future no mobile 
+// definir uma altura para a imagem e deixar ela do mesmo formato para não ter tantas mudanças
