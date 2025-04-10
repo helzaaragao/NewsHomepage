@@ -23,7 +23,7 @@ export const SubjectNews = styled.div`
       margin-bottom: 2rem;
     }
 
-    @media(min-width: 1920px){
+    @media(min-width: 1820px){
       display: flex;
       height:  40rem;
     }
@@ -56,8 +56,9 @@ export const PrincipalSubject = styled.section`
      height: 3rem;
      font-size: 0.938rem;
      border: none;
-     font-weight: bolder;
+     font-weight: bold;
      cursor: pointer;
+     letter-spacing: 0.2rem; 
      background-color: ${(props) => props.theme['soft-red']};
      color: ${(props) => props.theme['dark-blue']};
    
@@ -106,7 +107,7 @@ export const PrincipalSubject = styled.section`
       
     }
     
-    @media(min-width: 1920px){
+    @media(min-width: 1820px){
      width: 80rem;
   }
 `
@@ -143,7 +144,7 @@ export const NewsArticles = styled.section`
     margin-top: 0;
     width: 25rem;
    }
-   @media(min-width: 1920px){
+   @media(min-width: 1820px){
     width: 30rem;
   }
 
@@ -198,6 +199,11 @@ export const Topics = styled.section`
       display: flex;
       flex-direction: row;
    }
+
+   @media(min-width: 2560px){
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+   }
 `
 
-// Terminar de ajeitar a parte do meu monitor maior que ficou estranha de novo
