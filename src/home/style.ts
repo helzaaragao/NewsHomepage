@@ -4,16 +4,16 @@ export const HomeContainer = styled.main`
     display: flex;
     flex-direction: column;
     margin: 1rem;
+
     @media(min-width: 768px){
       margin: 2.5rem 10rem;
-      
     }
 `
 
 export const SubjectNews = styled.div`
   display: block;
  
-  @media(min-width: 768px){
+  @media(min-width: 1440px){
       display: flex;
       justify-content: center;
       width: 100%;
@@ -23,10 +23,9 @@ export const SubjectNews = styled.div`
       margin-bottom: 2rem;
     }
 
-    @media(min-width: 1445px){
+    @media(min-width: 1920px){
       display: flex;
-      height:  38rem;
-    
+      height:  40rem;
     }
 `
 export const PrincipalSubject = styled.section`
@@ -55,19 +54,21 @@ export const PrincipalSubject = styled.section`
    button {
      width: 10rem;
      height: 3rem;
-     background-color: ${(props) => props.theme['soft-red']};
-     border: none;
-     color: ${(props) => props.theme['dark-blue']};
-     font-weight: bolder;
      font-size: 0.938rem;
+     border: none;
+     font-weight: bolder;
      cursor: pointer;
-
+     background-color: ${(props) => props.theme['soft-red']};
+     color: ${(props) => props.theme['dark-blue']};
+   
      &:hover{
       color: ${(props) => props.theme['off-white']};
       background-color: ${(props) => props.theme['dark-blue']};
      }
    }
-   @media(min-width: 768px){
+   @media(min-width: 1440px){
+      width: 50rem;
+      
       #futureWeb-desktop{
         display: block;
         width: 100%;
@@ -76,15 +77,13 @@ export const PrincipalSubject = styled.section`
       #futureWeb-mobile{
         display: none;
       }
-      width: 50rem;
+      
 
       article{ 
         display: flex;
         justify-content: space-between;
         margin-top: 1rem;
         
-        
-       
          div{ 
             width: 40%;
             h1{
@@ -100,7 +99,6 @@ export const PrincipalSubject = styled.section`
             margin-bottom: 1.5rem;
             line-height: 160%;
             margin-top: 0;
-          
           }
          }
       }
@@ -108,31 +106,28 @@ export const PrincipalSubject = styled.section`
       
     }
     
-    @media(min-width: 1445px){
-    
-    width: 80rem;
-  
+    @media(min-width: 1920px){
+     width: 80rem;
   }
 `
 export const NewsArticles = styled.section`
    margin-top: 2rem;
-   background-color: ${(props) => props.theme['dark-blue']};
    padding: 1rem;
+   background-color: ${(props) => props.theme['dark-blue']};
    h2{
-     color: ${(props) => props.theme['soft-orange']};
      margin-bottom: 1rem;
      font-weight: 800;
      font-size: 2rem;
+     color: ${(props) => props.theme['soft-orange']};
    }
 
    h3{
-    color: ${(props) => props.theme['off-white']};
     margin-top: 2rem;
     margin-bottom: 0.6rem;
     cursor: pointer;
+    color: ${(props) => props.theme['off-white']};
     &:hover{
-      color: ${(props) => props.theme['soft-orange']};
-      
+      color: ${(props) => props.theme['soft-orange']}; 
     }
    }
    p{
@@ -144,25 +139,22 @@ export const NewsArticles = styled.section`
     margin-top: 2rem;
     opacity: 35%;
    }
-   @media(min-width: 768px){
+   @media(min-width: 1440px){
     margin-top: 0;
     width: 25rem;
-   
    }
-   @media(min-width: 1445px){
-    
+   @media(min-width: 1920px){
     width: 30rem;
-  
   }
 
 `
 
 export const Topics = styled.section`
-  margin-top: 2rem;
-  margin-bottom: 2rem; 
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+   display: flex;
+   flex-direction: column;
+   margin-top: 2rem;
+   margin-bottom: 2rem; 
+   gap: 1.5rem;
 
     article {
     display: flex;
@@ -170,7 +162,7 @@ export const Topics = styled.section`
     align-items: center;
    
     figure{
-      flex-shrink: 0; //impede que a imagem diminua
+      flex-shrink: 0; 
       img{
         width: 90px;
         height: auto;
@@ -180,35 +172,32 @@ export const Topics = styled.section`
     div{ 
       flex: 1; 
       h4 {
-        color: ${(props) => props.theme['soft-red']};
         font-size: 1.9rem;
         margin-bottom: 0.5rem;
+        color: ${(props) => props.theme['soft-red']};
       }
       h5 {
-        color: ${(props) => props.theme['dark-blue']};
         font-size: 1rem;
         font-weight: 800;
         margin-bottom: 0.5rem;
+        color: ${(props) => props.theme['dark-blue']};
         &:hover {
-          color: ${(props) => props.theme['soft-red']};
           cursor: pointer;
+          color: ${(props) => props.theme['soft-red']};
         }
       }
       p {
-        color: ${(props) => props.theme['dark-grayish-blue']};
         line-height: 1.5;
         font-size: 0.9rem;
+        color: ${(props) => props.theme['dark-grayish-blue']};
       }
     }
 
    }
-
-   
-   @media(min-width: 768px){
+   @media(min-width: 1440px){
       display: flex;
       flex-direction: row;
    }
 `
 
-// Arrumar linhas do p Bright Future no mobile 
-// definir uma altura para a imagem e deixar ela do mesmo formato para não ter tantas mudanças
+// Terminar de ajeitar a parte do meu monitor maior que ficou estranha de novo
