@@ -6,7 +6,7 @@
   <img src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white"/>
 </div>
 
-Aplicação web responsiva **(mobile/desktop)** que simula notícias de tecnologia, desenvolvida com o design disponibilizado pelo site <a href="https://www.frontendmentor.io/home" target="_blank">**Frontend Mentor**</a> .
+Aplicação web responsiva **(mobile/desktop)** que simula notícias de tecnologia, desenvolvida com o design disponibilizado pelo site <a href="https://www.frontendmentor.io/home">**Frontend Mentor**</a> .
 
 
 | Mobile | Desktop |
@@ -30,7 +30,7 @@ Em resumo, durante esse projeto, reforcei fundamentos essenciais e adquiri maior
 
 ## 🌐 Deploy no GitHub Pages
 
-O projeto está disponível online via GitHub Pages. Acesse <a href="https://helzaaragao.github.io/NewsHomepage/" target="_blank" >aqui</a> para visualizar.
+O projeto está disponível online via GitHub Pages. Acesse <a href="https://helzaaragao.github.io/NewsHomepage/" >aqui</a> para visualizar.
 
 ### 🛠️ Dependências e Versões Utilizadas
 
