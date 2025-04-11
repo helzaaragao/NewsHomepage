@@ -8,23 +8,28 @@
 
 Uma página **mobile e desktop** web que simula notícias de tecnologia. Desenvolvido com o design disponibilizado pelo site **Frontend Mentor**.
 
-<div>
-    <img src="./src/assets/mobile.png"width="375"/>
-    <img src="./src/assets/desktop.png"/>
-</div>
-*Imagem meramente ilustrativa, pois ela mudar dependendo do tamanho da tela do seu celular/computador!
+| Mobile | Desktop |
+|--------|---------|
+| <img src="./src/assets/mobile.png" width="200"> | <img src="./src/assets/desktop.png" width="800"> |
+
+*Imagem meramente ilustrativa, pois ela muda dependendo do tamanho da tela do seu celular/computador!
 
 - Mobile: 375px
 - Desktop: 1440px
 
 ## 📌 Desafios enfrentados 
 
-Desenvolvi um menu hamburguer totalmente customizado. Apesar de ser um componente simples, ainda não tinha tido a chance de faze-lo do zero. Durante o projeto, consolidei práticas de desenvolvimento mobile-first, garantindo que a experiência fosse otimizada para dispositivos menores antes de escalar para telas maiores.
-Em resumo, reforcei fundamentos essenciais, adquiri maior domínio na criação de interfaces responsivas e interativas.
+Durante a execução do projeto, optei por utilizar a versão gratuita do Frontend Mentor, a qual não disponibiliza os arquivos de design (Figma) ou especificações detalhadas de medidas. Diante dessa limitação, as decisões de layout e proporções foram baseadas em **avaliação visual ("a olho")**, exigindo atenção redobrada para garantir a fidelidade ao design proposto. 
+
+Implementei um **menu hamburguer** totalmente personalizado, desde a estrutura até a interação. Apesar de ser um componente aparentemente simples, esta foi a primeira oportunidade em que o construí integralmente do zero. 
+
+Adotei a abordagem **mobile-first** utilizando React, priorizando a otimização da experiência em dispositivos menores antes de escalar para telas maiores. Essa estratégia assegurou um desempenho consistente e uma base sólida para a responsividade.
+Em resumo, durante esse projeto, reforcei fundamentos essenciais e adquiri maior domínio na criação de interfaces responsivas e interativas.
+
 
 ## 🌐 Deploy no GitHub Pages
 
-O projeto está disponível online via GitHub Pages. Acesse <a href="helzaaragao.github.io/NewsHomepage/">aqui</a> para visualizar.
+O projeto está disponível online via GitHub Pages. Acesse <a href="https://helzaaragao.github.io/NewsHomepage/">aqui</a> para visualizar.
 
 ### 🛠️ Dependências e Versões Utilizadas
 
