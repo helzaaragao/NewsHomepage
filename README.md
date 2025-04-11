@@ -6,7 +6,7 @@
   <img src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white"/>
 </div>
 
-Uma página **mobile e desktop** web que simula notícias de tecnologia. Desenvolvido com o design disponibilizado pelo site **Frontend Mentor**.
+Uma página **mobile/desktop** web que simula notícias de tecnologia. Desenvolvido com o design disponibilizado pelo site **Frontend Mentor**.
 
 | Mobile | Desktop |
 |--------|---------|
